@@ -1,0 +1,79 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styling the main container */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.feed {
+    flex: 3;
+    padding: 1em;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 1em;
+    background-color: #f4f4f4;
+}
+
+.post,
+.widget {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .sidebar {
+        display: none;
+    }
+}
